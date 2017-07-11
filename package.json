@@ -1,0 +1,33 @@
+{
+  "name": "hypernova-string",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && babel src -d lib",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loatheb/hypernova-string.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loatheb/hypernova-string/issues"
+  },
+  "homepage": "https://github.com/loatheb/hypernova-string#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-airbnb": "^2.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "hypernova": "^2.1.3"
+  }
+}
