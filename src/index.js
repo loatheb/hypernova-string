@@ -1,9 +1,17 @@
 import hypernova from 'hypernova';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import root from 'window-or-global'
 
-const renderString = renderStringByProps => hypernova({
-  server() {
-    return props => renderStringByProps(props);
-  },
-});
+root.ReactDOMServer = ReactDOMServer;
+
+const renderString = (name, configureStore) => {
+  return hypernova({
+    server: (props) => {
+      return configureStore.server(props);
+    },
+    client: () => {},
+  });
+}
 
 export default renderString.renderString = renderString.default = renderString;
