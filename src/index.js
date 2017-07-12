@@ -7,9 +7,7 @@ root.ReactDOMServer = ReactDOMServer;
 
 const renderString = (name, configureStore) => {
   return hypernova({
-    server: (props) => {
-      return configureStore.server(props);
-    },
+    server: () => props => configureStore.server(props),
     client: () => {},
   });
 }
