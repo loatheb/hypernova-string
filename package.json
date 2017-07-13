@@ -2,7 +2,7 @@
   "name": "hypernova-function",
   "version": "1.0.0",
   "description": "Directly rendering string for hypernova",
-  "main": "src/index.js",
+  "main": "src/index.es6",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rimraf lib && babel src -d lib",
