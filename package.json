@@ -28,9 +28,11 @@
     "eslint-plugin-react": "^7.1.0",
     "rimraf": "^2.6.1"
   },
+  "dependencies": {
+    "window-or-global": "~1.0.1"
+  },
   "peerDependencies": {
     "hypernova": "~2.0.0",
-    "react-dom": "~15.4.2",
-    "window-or-global": "~1.0.1"
+    "react-dom": "~15.4.2"
   }
 }
