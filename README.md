@@ -1,1 +1,2 @@
-"First commit to create master branch"
+# hypernova-function
+Directly rendering string for hypernova

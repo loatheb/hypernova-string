@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "rules":{
+    "no-multi-assign": "off",
+    "no-bitwise": "off",
+    "no-mixed-operators": "off"
+  }
+}
