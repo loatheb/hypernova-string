@@ -1,2 +1,2 @@
-# hypernova-string
-hypernova-string for rendering string directly
+# hypernova-function
+Directly rendering string for hypernova
