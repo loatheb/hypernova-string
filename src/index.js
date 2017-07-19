@@ -28,4 +28,9 @@ const renderFunction = (name, configureStore) => hypernova({
   client: () => {},
 });
 
+export const renderStaticFunction = (name, configureStore) => hypernova({
+  server: () => props => configureStore.server(props),
+  client: () => {},
+});
+
 export default renderFunction.renderFunction = renderFunction.default = renderFunction;
